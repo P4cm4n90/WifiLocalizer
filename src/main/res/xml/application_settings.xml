@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+    <intent android:action="android.intent.action.VIEW"
+                    android:data="http://developer.android.com" />
+
+    <PreferenceCategory
+        android:title="Opcje główne"
+        android:key="main_options">
+    <PreferenceScreen
+        android:title="Ustawienia lokalizacyjne"
+        android:key="localization"
+        android:persistent="false">
+
+        <ListPreference android:key="@string/prefLocProvider" android:title="Dostawca lokalizacji" android:entries="@array/locProvider" android:entryValues="@array/locProviderAlias" android:defaultValue="@string/locProviderGpsAlias"/>
+         
+        
+        
+        <EditTextPreference android:key="@string/prefLocInterval" android:title="Okres odświerzania[ms]"
+                       android:defaultValue="2000"
+            
+            />
+        <EditTextPreference android:key="@string/prefLocDistanceInterval" android:title="Minimalna różnica [m]"
+            				android:defaultValue="1"
+            />
+
+       </PreferenceScreen>
+        
+             
+
+ 
+    <PreferenceScreen
+        android:title="Ustawienie algorytmu"
+        android:key="wifi_category"
+        android:persistent="false">
+        
+        <EditTextPreference android:key="@string/prefWifiPropagationFactor" android:title="Współczynnik tłumienia" android:defaultValue="3"/>
+        <EditTextPreference android:key="@string/prefWifiAttenuationFactor" android:title="Współczynnik zaniku" android:defaultValue="0"/>
+        <EditTextPreference android:key="@string/prefWifiMinMeasure" android:title="Minimum pomiarów do lokalizacji źródła"
+            		android:defaultValue="10"
+            />
+        <EditTextPreference android:key="@string/prefWifiMinLoc" android:title="Minimum punktów pomiarowych"
+			android:defaultValue="10"
+			/>
+        
+        
+        
+        
+        
+    </PreferenceScreen>
+
+    </PreferenceCategory>
+    <PreferenceCategory android:title="Ustawienia mapy" android:key="@string/prefMapCategory">
+    <CheckBoxPreference android:key="@string/prefMarkSamplePoint" android:title="Zaznaczanie puntków pomiarowych" android:defaultValue='"false"'/>
+     <EditTextPreference android:key="@string/prefMapBearingInterval" android:title="Okres odświerzania" android:summary="Parametr określa okres odświerzania azymutu na mapie w sekundach" android:defaultValue="1"/>
+ </PreferenceCategory><PreferenceCategory android:title="Opcje zapisu/odczytu" android:key="@string/prefStorageCategory"><CheckBoxPreference android:key="@string/prefSaveData" android:title="Zapis pomiarów do pliku" android:defaultValue="false" android:summary="Zaznaczenie tej opcji umożliwia również zapis pomiarów do pliku podczas zapisu wynikó oraz odczyt danych pomiaróww." />
+ <CheckBoxPreference android:key="@string/prefSaveDataOnExit" android:title="Zapis danych przed wyłączeniem aplikacji" android:defaultValue='"false"'/>
+ <EditTextPreference android:key="@string/prefSaveDataFileName" android:title="Nazwa pliku wyników" android:summary="Nazwa pliku do przechowywania danych"/>
+    <EditTextPreference android:key="@string/prefLocationListFileName" android:title="Nazwa pliku lokacji" android:summary="Nazwa pliku z danymi lokalizacyjnymi"/>
+ 
+</PreferenceCategory><PreferenceCategory android:key="@string/prefDeviceOptions" android:title="Wykryte urządzenia">
+
+</PreferenceCategory><PreferenceCategory android:title="Inne" android:key="others">
+     
+     <Preference android:title="Powrót do ustawień domyślnych" android:key="@string/prefRestoreDefault"/>
+     
+ </PreferenceCategory>
+
+</PreferenceScreen>

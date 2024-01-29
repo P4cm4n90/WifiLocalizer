@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rlWifiCell"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ProgressBar
+        android:id="@+id/pbWifiCellSignalStrength"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/tvWifiCellId"
+        android:layout_marginRight="10dp"
+        android:maxHeight="20dp"
+        android:maxWidth="140dp"
+        android:minHeight="20dp"
+        android:minWidth="140dp"
+        android:progressDrawable="@drawable/progresscustom" />
+
+    <TextView
+        android:id="@+id/tvPBSignalStrength"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/pbWifiCellSignalStrength"
+        android:layout_alignLeft="@+id/pbWifiCellSignalStrength"
+        android:layout_alignRight="@+id/pbWifiCellSignalStrength"
+        android:layout_alignTop="@+id/pbWifiCellSignalStrength"
+        android:layout_marginRight="10dp"
+        android:background="#00000000"
+        android:gravity="center"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColorLink="@color/yellow"
+        android:textSize="18dp" />
+
+    <ImageView
+        android:id="@+id/ivWifiIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="5dp"
+        android:src="@drawable/wifi_stationary" />
+
+    <TextView
+        android:id="@+id/tvWifiCellLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tvWifiCellId"
+        android:layout_below="@+id/pbWifiCellSignalStrength"
+        android:text="Unknown"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColorLink="@color/white"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/tvWifiCellId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@+id/ivWifiIcon"
+        android:text="WifiName (mac)"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ivReadyLoc"
+        android:layout_below="@+id/tvWifiCellId"
+        android:layout_toRightOf="@+id/ivWifiIcon"
+        android:focusableInTouchMode="false"
+        android:layout_marginLeft="5dp"
+        android:src="@drawable/ok_con"
+        android:visibility="invisible"
+        android:layout_marginTop="-1dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ivRefreshLoc"
+        android:src="@drawable/refresh"
+        android:layout_toRightOf="@+id/ivReadyLoc"
+        android:visibility="invisible"
+        android:layout_below="@+id/tvWifiCellId" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ivFloating"
+        android:layout_below="@+id/tvWifiCellId"
+        android:layout_toRightOf="@+id/ivRefreshLoc"
+        android:background="@drawable/wifi_floating_icon"
+        android:visibility="invisible" />
+
+</RelativeLayout>
+
+<!-- From: file:/home/pac/programming/app/src/main/res/layout/wificell.xml -->

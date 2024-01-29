@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array
+        name="actionArray">
+        <item>@string/localizeDevice</item>
+        <item>@string/localizeDeviceGuide</item>
+         <item>@string/showDevice</item>
+          <item>@string/navigateDevice</item>
+    </string-array>
+    <string-array
+        name="hotspotLocMode">
+        <item>@string/locModeContinous</item>
+         <item>@string/locModeOnDemand</item>
+    </string-array>
+       <string-array
+        name="hotspotLocModeAlias">
+        <item>@string/locModeContinousAlias</item>
+         <item>@string/locModeOnDemandAlias</item>
+    </string-array>
+      <string-array
+        name="locProvider">
+        <item>@string/locProviderGps</item>
+         <item>@string/locProviderNetwork</item>
+         <item>@string/locProviderCustom</item>
+    </string-array>
+     <string-array       
+          name="locProviderAlias">
+        <item>@string/locProviderGpsAlias</item>
+         <item>@string/locProviderNetworkAlias</item>
+         <item>@string/locProviderCustomAlias</item>
+    </string-array>
+       
+   
+    
+</resources>

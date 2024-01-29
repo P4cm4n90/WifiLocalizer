@@ -1,0 +1,60 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.wifiloc.MainActivity" >
+
+
+    <item
+        android:id="@+id/action_act"
+        android:orderInCategory="100"
+        android:title="Czynności"
+        android:icon="@drawable/icon_tools"
+        app:showAsAction="always">
+
+        <menu>
+            <item android:id="@string/menuHideMarker" android:title="Minimalizuj markery" android:enabled="false"></item>
+            <item android:id="@string/menuLocaliseAll" android:title="Lokalizuj dostępne AP" android:enabled="false"></item>
+            <item android:id="@string/menuStopNavigation" android:title="Wyłącz nawigacje" android:enabled="false"></item>
+            <item android:id="@string/menuStopGuideMode" android:titleCondensed="Wyłącz tryb przewodnika" android:title="Wyłącz tryb przewodnika" android:enabled="false"></item>
+            <item android:id="@string/menuMarkRealApLoc" android:title="Zaznacz położenienie AP" android:enabled="true"></item>
+            <item android:id="@string/menuSampleData" android:title="Pobierz dane" android:enabled="true"></item>
+            <item android:id="@string/menuWipeAll" android:title="Wyczysc dane" android:enabled="true"></item>
+        </menu>
+    </item>
+
+    <item android:id="@string/menuSaveData" android:title="Zapisz dane"></item>
+    <item android:id="@string/menuLoadData" android:title="Wczytaj dane"></item>
+
+    <item
+        android:id="@+id/action_enviroment"
+        android:orderInCategory="100"
+        android:title="Wybór otoczenia"
+        android:icon="@drawable/mountain_icon"
+        app:showAsAction="always">
+
+        <menu>
+            <group android:checkableBehavior="single">
+                <item android:id="@string/menuFreeSpace"
+                    android:title="Wolna przestrzeń" />
+                <item android:id="@string/menuFreeSpaceObject"
+                    android:title="Wolna przestrzeń, zaniki" />
+                <item android:id="@string/menuIndoor1"
+                    android:title="Pomieszczenie #1" />
+                <item android:id="@string/menuIndoor2"
+                    android:title="Pomieszczenie #2" />
+                <item android:id="@string/menuIndoor3"
+                    android:title="Pomieszczenie #3" />
+            </group>
+        </menu>
+    </item>
+
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:title="Ustawienia"
+        app:showAsAction="never">
+    </item>
+
+
+
+</menu>

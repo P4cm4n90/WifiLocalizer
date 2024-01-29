@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Wprowadz koordynaty"
+        android:id="@+id/bChangeLocation"
+        android:layout_below="@+id/bPreviousLocation"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Poprzednia lokacja"
+        android:id="@+id/bPreviousLocation"
+        android:layout_below="@+id/bNextLocation"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/bChangeLocation"
+        android:layout_alignEnd="@+id/bChangeLocation" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Skanuj"
+        android:id="@+id/bScanNow"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/bChangeLocation"
+        android:layout_alignEnd="@+id/bChangeLocation" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Wczytaj liste"
+        android:id="@+id/bLoadLocationList"
+        android:layout_below="@+id/bChangeLocation"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/bChangeLocation"
+        android:layout_alignEnd="@+id/bChangeLocation" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Następna lokacja"
+        android:id="@+id/bNextLocation"
+        android:layout_below="@+id/bScanNow"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/bPreviousLocation"
+        android:layout_alignEnd="@+id/bPreviousLocation" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/bMinimalize"
+        android:text="Minimalizuj"
+        android:layout_below="@+id/bLoadLocationList"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/bLoadLocationList"
+        android:layout_alignEnd="@+id/bLoadLocationList" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/tvCommandModeInfo"
+        android:layout_below="@+id/bMinimalize"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true" />
+
+
+</RelativeLayout>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">WifiLoc</string>
+    <string name="title_section1">Section 1</string>
+    <string name="title_section2">Section 2</string>
+    <string name="title_section3">Section 3</string>
+    <string name="action_settings">Settings</string>
+    <string name="selfLocalisation">Lokalizacja własna</string>
+    <string name="locProvider">Dostawca lokalizacji</string>
+    <string name="transQuantity">Ilość wykrytych nadajników</string>
+    <string name="setGps">Uruchom/Wyłącz usługi lokalizacyjne</string>
+    <string name="setGpsLandscape">Uruchom/Wyłącz \n usługi lokalizacyjne</string>
+    <string name="enterCord">Wprowadź własne współrzędne</string>
+    <string name="loadMap">Pobierz mapę</string>
+    <string name="startScan">Rozpocznij lokalizowanie \n urządzeń</string>
+    <string name="stopScan">Zakończ lokalizowanie \n urządzeń</string>
+    <string name="action">Wybór czynności</string>
+    <string name="localizeDevice">Zlokalizuj urządzenie</string>
+    <string name="localizeDeviceGuide">Zlokalizuj urządzenie (Tryb przewodnika)</string>
+    <string name="showDevice">Pokaż urządzenie na mapie</string>
+    <string name="navigateDevice">Nawiguj do urządzenia</string>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="yellow">#ffff00</color>
+    <color name="green">#76ee00</color>
+    <color name="gold">#ffd700</color>
+    <string name="locModeContinous">Ciągłe</string>
+    <string name="locModeOnDemand">Na zawołanie</string>
+    <string name="locModeContinousAlias">locCont</string>
+    <string name="locModeOnDemandAlias">locDemand</string>
+    <string name="locProviderGps">GPS</string>
+    <string name="locProviderNetwork">Fuzja danych lokalizacyjnych</string>
+    <string name="locProviderCustom">Własna</string>
+    <string name="locProviderGpsAlias">gps</string>
+    <string name="locProviderNetworkAlias">network</string>
+    <string name="locProviderCustomAlias">custom</string>
+    <string name="prefLocMode">localization_mode</string>
+    <string name="prefLocInterval">localization_interval</string>
+    <string name="prefLocProvider">localization_provider</string>
+    <string name="prefLocDistanceInterval">localization_distance_interval</string>
+    <string name="prefWifiInterval">wifi_interval</string>
+    <string name="prefWifiMinMeasure">wifi_min_measure</string>
+    <string name="prefWifiMinLoc">wifi_min_loc</string>
+    <string name="prefWifiMode">wifi_mode</string>
+    <string name="prefWifiPropagationFactor">wifi_propagation_factor</string>
+    <string name="prefWifiAttenuationFactor">wifi_attenuation_factor</string>
+    <string name="prefSaveData">save_data</string>
+    <string name="prefRestoreDefault">restore_default</string>
+    <string name="prefGuideMode">mode_guide</string>
+    <string name="prefMapCategory">map_options</string>
+    <string name="prefStorageCategory">storage_options</string>
+    <string name="prefSaveDataOnExit">save_data_on_exit</string>
+    <string name="prefSaveDataFileName">save_data_file_name</string>
+    <string name="prefLocationListFileName">location_list_file_name</string>
+    <string name="prefDeviceOptions">device_options</string>
+    <string name="prefDeviceOptionsFloatingCriteria">device_options_movement</string>
+    <string name="menuStopNavigation">stop_navigation</string>
+    <string name="menuStopGuideMode">stop_guide</string>
+    <string name="menuSaveData">menu_save_data</string>
+    <string name="menuLoadData">menu_load_data</string>
+    <string name="menuHideMarker">menu_hide_markers</string>
+    <string name="menuLocaliseAll">menu_localise_all</string>
+    <string name="menuFreeSpace">menu_free_space</string>
+    <string name="menuMarkRealApLoc">menu_mark_real_ap_location</string>
+    <string name="menuWipeAll">menu_wipe_all</string>
+    <string name="menuSampleData">menu_sample_data</string>
+    <string name="menuFreeSpaceObject">menu_free_space_objects</string>
+    <string name="menuIndoor1">menu_indoor_1</string>
+    <string name="menuIndoor2">menu_indoor_2</string>
+    <string name="menuIndoor3">menu_indoor_3</string>
+    <string name="prefMarkSamplePoint">mark_sample_point</string>
+    <string name="prefMapBearingInterval">Częstotliwość odświerzania azymutu</string>
+    <string name="toastLocDistanceInterval">Niedozwolona wartość. Wpisz wartość całkowitą w zakresie 1-10</string>
+    <string name="toastLocInterval">Niedozwolona wartość. Wpisz wartość całkowitą w zakresie 1000-10000</string>
+    <string name="toastWifiInterval">Niedozwolona wartość. Wpisz wartość całkowitą w zakresie 500-10000</string>
+    <string name="toastWifiMinLoc">Niedozwolona wartość. Wpisz wartość całkowitą w zakresie 4-100</string>
+    <string name="toastWifiMinMeasure">Niedozwolona wartość. Wpisz wartość całkowitą w zakresie 5-100</string>
+    <string name="toastWifiPropagationFactor">Niedozwolona wartość. Wpisz wartość całkowitą w zakresie 1-8</string>
+    <string name="toastBadInputData">Wprowadzono niepoprawne dane. Spróbuj jeszcze raz</string>
+    <string name="toastMapBearingInterval">Niedozwolona wartość. Wpisz wartość całkowitą w zakresie 0.01 - 10 </string>
+    <string name="toastDeviceFloatingCriteria">Niedozwolona wartość. Wpisz wartość całkowitą w zakresie 2 - 50 </string>
+    <string name="toastWifiAttenuationFactor">Niedozwolona wartość. Wpisz wartość całkowitą w zakresie 0 - 15 </string>
+
+
+
+
+</resources>
